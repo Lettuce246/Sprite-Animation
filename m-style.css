@@ -1,0 +1,87 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+#container{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  box-shadow:5px 5px 5px black;
+  border:1px solid black;
+  padding:10px;
+  width: 650px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background-color: rgb(233, 231, 231);
+}
+#controls{
+  font-family: 'Bangers', cursive;
+  font-size:32px;
+  margin:10px;
+  color: darkgreen;
+}
+#controls > p{
+  font-size: 48px;
+  color: darkgreen;
+}
+#canvas1{
+  box-shadow:inset 5px 5px 5px black;
+  border:1px solid black;
+  background: url(SeedPacket1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#mandrake{
+  display:none;
+}
+
+h1 {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+h2 {
+  padding-bottom: 15px;
+}
+
+h1, h2, p {
+
+  text-align: center;
+  font-family: 'Bangers', cursive;
+  color: rgb(104, 26, 26);
+}
+
+body {
+  background-color: #e8a561;
+}
+
+@media(max-width: 700px) {
+    h1{
+      font-size: 1.3em;
+    }
+
+    h2 {
+      font-size: 1em;
+    }
+
+    #controls > label {
+      font-size: 20px;
+    }
+
+    .description-box {
+      font-size: 15px;
+    }
+
+    #container{
+      width: 80%;
+      max-width: 960px;
+      flex: 1 1 300px;
+
+    }
+
+}
